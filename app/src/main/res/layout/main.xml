@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="413dp"
+        android:layout_height="615dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732"
+        app:srcCompat="@drawable/map_japan_10207" />
+
+    <Button
+        android:id="@+id/btn_hokkaido"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#774D3AB7"
+        android:text="北海道"
+        android:onClick="btn_hokkaido"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_niigata"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="256dp"
+        android:backgroundTint="#808BC34A"
+        android:text="新潟"
+        android:onClick="btn_niigata"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_tokyo"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="btn_tokyo"
+        android:text="東京"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.606"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_ishikawa"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="296dp"
+        android:backgroundTint="#808BC34A"
+        android:text="金沢"
+        android:onClick="btn_ishikawa"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_aichi"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="172dp"
+        android:backgroundTint="#808BC34A"
+        android:text="名古屋"
+        android:onClick="btn_aichi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_osaka"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="188dp"
+        android:backgroundTint="#80FFC107"
+        android:text="大阪"
+        android:onClick="btn_osaka"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_kochi"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#80D883B9"
+        android:onClick="btn_kochi"
+        android:text="高知"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_kagoshima"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#80EF665C"
+        android:text="鹿児島"
+        android:onClick="btn_kagoshima"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_okinawa"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="#80EF665C"
+        android:text="那覇"
+        android:onClick="btn_okinawa"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_fukuoka"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="#80EF665C"
+        android:text="福岡"
+        android:onClick="btn_fukuoka"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_hiroshima"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="196dp"
+        android:backgroundTint="#80FF9800"
+        android:onClick="btn_hiroshima"
+        android:text="広島"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btn_miyagi"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#802196F3"
+        android:text="仙台"
+        android:onClick="btn_miyagi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wi_day_cloudy" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:text="お天気アプリ"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
